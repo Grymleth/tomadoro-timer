@@ -15,14 +15,14 @@
 
     <main>
         <div class="option">
-            <button type="button">Pomodoro</button>
-            <button type="button">Short Break</button>
-            <button type="button">Long Break</button>
+            <button type="button" onclick="optionClick(25)">Pomodoro</button>
+            <button type="button" onclick="optionClick(5)">Short Break</button>
+            <button type="button" onclick="optionClick(10)">Long Break</button>
         </div>
-
+        
         <h2 class="timer" id="timer-pomodoro">25:00</h2>
 
-        <button type="button" class="start">Start</button>
+        <button type="button" id="btn-start" onclick="startClick()">Start</button>
 
     </main>
 
@@ -45,43 +45,6 @@
         </nav>
     </footer>
     
+    <script src="script.js"></script>
 </body>
-
-<!-- <script>
-    class Time{
-        minute = 0;
-        second = 0;
-        constructor(minute, second){
-            this.minute = minute;
-            this.second = second;
-        }
-
-        countdown(){
-            this.second--;
-            if(this.second < 0){
-                this.minute--;
-                this.second = 59;
-            }
-        }
-
-        toString(){
-            return this.minute+":"+this.second;
-        }
-    }
-
-    function pomoClick(time){
-        var timer = document.getElementById("timer-pomodoro");
-
-        timer.textContent = time;
-
-    }
-
-    function countdown(){
-
-    }
-
-     
-
-</script>
--->
 </html>
